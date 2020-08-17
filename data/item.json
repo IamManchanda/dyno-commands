@@ -1,0 +1,11 @@
+{
+  "user_id": {
+    "S": "b8689843-47bd-46b2-a173-69e0f1d7e408"
+  },
+  "timestamp": {
+    "N": "1597688042"
+  },
+  "content": {
+    "S": "This is the content of my fourth test note, lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quam quibusdam libero quos nemo distinctio aliquid nisi. Explicabo quaerat animi architecto itaque nobis modi repellat non tenetur quo, veniam in!"
+  }
+}

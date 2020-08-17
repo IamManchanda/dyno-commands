@@ -1,0 +1,3 @@
+aws dynamodb put-item \
+--table-name td_notes_test \
+--item file://data/item.json
