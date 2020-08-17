@@ -1,0 +1,6 @@
+aws dynamodb update-item \
+--table-name td_notes_test \
+--key file://data/key.json \
+--update-expression "SET #t = :t" \
+--expression-attribute-names file://data/attribute-names.json \
+--expression-attribute-values file://data/attribute-values.json
