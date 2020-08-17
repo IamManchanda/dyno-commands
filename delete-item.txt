@@ -1,0 +1,3 @@
+aws dynamodb delete-item \
+--table-name td_notes_test \
+--key file://data/key.json
