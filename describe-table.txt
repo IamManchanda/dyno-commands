@@ -1,0 +1,2 @@
+aws dynamodb describe-table \
+--table-name td_notes_test
