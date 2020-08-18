@@ -10,3 +10,24 @@ aws dynamodb query \
 --key-condition-expression "user_id = :uid AND #t > :t" \
 --expression-attribute-value file://data/expression-attribute-values.json \
 --expression-attribute-names file://data/expression-attribute-names.json
+
+--------------------------------------------------------------------------
+
+aws dynamodb query \
+--table-name td_notes_test \
+--key-condition-expression "user_id = :uid AND #t > :t" \
+--expression-attribute-value file://data/expression-attribute-values.json \
+--expression-attribute-names file://data/expression-attribute-names.json \
+--filter-expression "cat = :cat" \
+--return-consumed-capacity INDEXES
+
+--------------------------------------------------------------------------
+
+aws dynamodb query \
+--table-name td_notes_test \
+--key-condition-expression "user_id = :uid AND #t > :t" \
+--expression-attribute-value file://data/expression-attribute-values.json \
+--expression-attribute-names file://data/expression-attribute-names.json \
+--filter-expression "cat = :cat" \
+--return-consumed-capacity INDEXES \
+--consistent-read
