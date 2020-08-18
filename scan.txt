@@ -1,0 +1,14 @@
+aws dynamodb scan \
+--table-name td_notes_test \
+--filter-expression "user_name = :uname" \
+--expression-attribute-values file://data/uname.json \
+--return-consumed-capacity INDEXES
+
+--------------------------------------------------------
+
+aws dynamodb scan \
+--table-name td_notes_test \
+--filter-expression "user_name = :uname" \
+--expression-attribute-values file://data/uname.json \
+--return-consumed-capacity INDEXES  \
+--consistent-read
