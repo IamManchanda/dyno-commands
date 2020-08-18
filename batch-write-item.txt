@@ -1,2 +1,7 @@
 aws dynamodb batch-write-item \
 --request-items file://data/items.json
+
+--------------------------------------------
+
+aws dynamodb batch-write-item \
+--request-items file://data/more-items.json
